@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+//4 - Fazer um programa para ler um número do usuário e determinar se este número é
+//par ou não par.
+
+int main() {
+   
+    int numero;
+
+    printf("Digite o numero desejado: ");
+    scanf_s("%d", &numero);
+
+    if (numero %2 == 0){
+        printf("O numero %d e par!", numero);
+    }
+    else {
+        printf("O numero %d e impar!", numero);
+    }
+
+    return 0;
+}
