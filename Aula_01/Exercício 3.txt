@@ -1,0 +1,36 @@
+#include <stdio.h>
+
+//3 - Fazer um programa em "C" que pergunte um valor em graus Fahrenheit e
+//imprime no vídeo o correspondente em graus Celsius usando as fórmulas que seguem.
+
+//a.Usar uma variável double para ler o valor em Fahrenheit e a fórmula
+//C = (f - 32.0) * (5.0 / 9.0)
+
+int main() {
+    int Fahrenheit;
+    double C;
+
+    printf("Digita a sua temperatura em Fahrenheit: ");
+    scanf_s("%d", &Fahrenheit);
+
+    C = (Fahrenheit - 32.0) * 5.0 / 9.0;
+    printf("Esta e a temperatura em Celius: %f\n", C);
+
+    return 0;
+}
+
+//b.Usar uma variável int para ler o valor em Fahrenheit e a fórmula
+//C = (f - 32) * (5 / 9).
+
+int main() {
+    int Fahrenheit;
+    int C;
+
+    printf("Digita a sua temperatura em Fahrenheit: ");
+    scanf_s("%d", &Fahrenheit);
+
+    C = (Fahrenheit - 32) * 5 / 9;
+    printf("Esta e a temperatura em Celius: %d\n", C);
+
+    return 0;
+}
