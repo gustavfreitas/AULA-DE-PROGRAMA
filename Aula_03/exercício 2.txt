@@ -1,0 +1,26 @@
+// Escreva uma função recursiva que calcula a potência de um número inteiro x
+//elevado a um número inteiro y.
+
+
+#include <stdio.h>
+
+int	potencia(int x, int y) {
+ 
+	if (y == 0) {
+		return 1;
+	}
+	else {
+		return x * potencia(x, y - 1);
+	}
+}
+
+int main() {
+	int base = 5;
+	int expoente = 3;
+	int resultado;
+
+	resultado = potencia(base, expoente);
+	printf("%d ^ %d = %d\n", base, expoente, resultado);
+
+	return 0;
+}
